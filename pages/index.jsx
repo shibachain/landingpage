@@ -2,18 +2,18 @@ import { ChevronRightIcon, StarIcon } from '@heroicons/react/solid'
 import Footer from '../components/footer'
 import Hero from '../components/hero'
 const stats = [
-  { label: 'TPS', value: '10,000' },
+  { label: 'TPS', value: '4,000' },
   { label: 'Blocktime', value: '4 Secs' },
   { label: 'Node', value: '7' },
-  { label: 'Transaction Cost', value: '$0.0000019' },
+  { label: 'Transaction Cost', value: '$0.000047' },
 ]
 const logos = [
-  { name: 'Transistor', url: 'https://tailwindui.com/img/logos/transistor-logo-gray-400.svg' },
-  { name: 'Mirage', url: 'https://tailwindui.com/img/logos/mirage-logo-gray-400.svg' },
-  { name: 'Tuple', url: 'https://tailwindui.com/img/logos/tuple-logo-gray-400.svg' },
-  { name: 'Laravel', url: 'https://tailwindui.com/img/logos/laravel-logo-gray-400.svg' },
-  { name: 'StaticKit', url: 'https://tailwindui.com/img/logos/statickit-logo-gray-400.svg' },
-  { name: 'Workcation', url: 'https://tailwindui.com/img/logos/workcation-logo-gray-400.svg' },
+  { name: 'Binance', url: '/binance.svg' },
+  { name: 'Coinbase', url: '/coinbase.svg' },
+  { name: 'Gate.IO', url: '/gate.svg' },
+  { name: 'Huobi', url: '/huobi.svg' },
+  { name: 'KuCoin', url: '/kucoin.svg' },
+  { name: 'OKEx', url: '/okex.svg' },
 ]
 
 export default function Example() {
