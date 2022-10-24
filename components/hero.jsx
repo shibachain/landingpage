@@ -9,7 +9,8 @@ import Chain from '../components/chain/chain'
 const navigation = [
   { name: 'Docs', href: '#' },
   { name: 'Features', href: '#' },
-  { name: 'Exploror', href: '#' },
+  { name: 'Explorer', href: 'https://exp.shibachain.net' },
+  { name: 'Staking', href: 'https://staking.shibachain.net' },
 ]
 
 
@@ -23,11 +24,11 @@ export default function Hero() {
 	
 	  
   return (
-    <div className="relative bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
+    <div className="relative overflow-hidden bg-white">
+      <div className="mx-auto max-w-7xl">
         <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
           <svg
-            className="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+            className="absolute inset-y-0 right-0 hidden w-48 h-full text-white transform translate-x-1/2 lg:block"
             fill="currentColor"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
@@ -37,21 +38,21 @@ export default function Hero() {
           </svg>
 
           <Popover>
-            <div className="relative pt-6 px-4 sm:px-6 lg:px-8">
+            <div className="relative px-4 pt-6 sm:px-6 lg:px-8">
               <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
                 <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
                   <div className="flex items-center justify-between w-full md:w-auto">
                     <a href="#">
                       <span className="sr-only">Workflow</span>
                       <img
-                        className="h-8 w-auto sm:h-10"
+                        className="w-auto h-8 sm:h-10"
                         src="/logo.svg"
                       />
                     </a>
-                    <div className="-mr-2 flex items-center md:hidden">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+                    <div className="flex items-center -mr-2 md:hidden">
+                      <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
                         <span className="sr-only">Open main menu</span>
-                        <MenuIcon className="h-6 w-6" aria-hidden="true" />
+                        <MenuIcon className="w-6 h-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
@@ -77,21 +78,21 @@ export default function Hero() {
             >
               <Popover.Panel
                 focus
-                className="absolute z-10 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+                className="absolute inset-x-0 top-0 z-10 p-2 transition origin-top-right transform md:hidden"
               >
-                <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                  <div className="px-5 pt-4 flex items-center justify-between">
+                <div className="overflow-hidden bg-white rounded-lg shadow-md ring-1 ring-black ring-opacity-5">
+                  <div className="flex items-center justify-between px-5 pt-4">
                     <div>
                       <img
-                        className="h-8 w-auto"
+                        className="w-auto h-8"
                         src="/logo.svg"
                         alt=""
                       />
                     </div>
                     <div className="-mr-2">
-                      <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
+                      <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white rounded-md hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-rose-500">
                         <span className="sr-only">Close main menu</span>
-                        <XIcon className="h-6 w-6" aria-hidden="true" />
+                        <XIcon className="w-6 h-6" aria-hidden="true" />
                       </Popover.Button>
                     </div>
                   </div>
@@ -100,7 +101,7 @@ export default function Hero() {
                       <a
                         key={item.name}
                         href={item.href}
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                        className="block px-3 py-2 text-base font-medium text-gray-700 rounded-md hover:text-gray-900 hover:bg-gray-50"
                       >
                         {item.name}
                       </a>
@@ -108,7 +109,7 @@ export default function Hero() {
                   </div>
                   <a
                     href="#"
-                    className="block w-full px-5 py-3 text-center font-medium text-rose-600 bg-gray-50 hover:bg-gray-100"
+                    className="block w-full px-5 py-3 font-medium text-center text-rose-600 bg-gray-50 hover:bg-gray-100"
                   >
                     Log in
                   </a>
@@ -117,9 +118,9 @@ export default function Hero() {
             </Transition>
           </Popover>
 
-          <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
+          <main className="px-4 mx-auto mt-10 max-w-7xl sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
             <div className="sm:text-center lg:text-left">
-              <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+              <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block xl:inline">Shiba</span>{' '}
                 <span className="block text-rose-600 xl:inline">Chain</span>
               </h1>
@@ -133,7 +134,7 @@ export default function Hero() {
                 <div className="mt-3 sm:mt-0 sm:ml-3">
                   <a
                     href="https://shibaswap.com/#/swap"
-                    className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-rose-700 bg-rose-100 hover:bg-rose-200 md:py-4 md:text-lg md:px-10"
+                    className="flex items-center justify-center w-full px-8 py-3 text-base font-medium border border-transparent rounded-md text-rose-700 bg-rose-100 hover:bg-rose-200 md:py-4 md:text-lg md:px-10"
                   >
                     Buy SHIB
                   </a>
@@ -145,7 +146,7 @@ export default function Hero() {
       </div>
       <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
         <img
-          className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+          className="object-cover w-full h-56 sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="https://unsplash.com/photos/aH9Uskj8XTU/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM1OTI4Nzgy&force=true&w=1920"
           alt=""
         />
